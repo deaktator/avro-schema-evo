@@ -1,0 +1,17 @@
+{
+  "protocol" : "Protocol1",
+  "namespace" : "com.github.deaktator.testing.p1",
+  "types" : [ {
+    "type" : "record",
+    "name" : "ScoreE",
+    "fields" : [ {
+      "name" : "value",
+      "type" : [ {
+        "type" : "array",
+        "items" : "int"
+      }, "null" ],
+      "default" : [ ]
+    } ]
+  } ],
+  "messages" : { }
+}

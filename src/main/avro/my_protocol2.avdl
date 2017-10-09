@@ -1,0 +1,6 @@
+@namespace("com.github.deaktator.testing.p2")
+protocol Protocol2 {
+  record ScoreN {
+    union { null, array<int> } value = null;
+  }
+}
