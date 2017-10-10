@@ -1,0 +1,19 @@
+@namespace("com.github.deaktator.scores")
+protocol ScoreProtocol {
+
+  record IntScore {
+    int value = 0;
+  }
+
+  record StringScore {
+    string value = "";
+  }
+
+  record DoubleVectorScore {
+    array<double> value = [];
+  }
+
+  record Score {
+    union { null, IntScore, StringScore, DoubleVectorScore } value = null;
+  }
+}
